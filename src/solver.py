@@ -134,10 +134,11 @@ class Solver:
 
 
     def simplifiy(self):
-        self.a -= self.ra
-        self.b -= self.rb
-        self.c -= self.rc
-        ra, rb, rc = 0, 0, 0
+        if (self.degree != 0):
+            self.a -= self.ra
+            self.b -= self.rb
+            self.c -= self.rc
+            ra, rb, rc = 0, 0, 0
 
     def get_descrimant(self):
         if not self.delta:
