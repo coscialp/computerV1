@@ -1,5 +1,6 @@
 import sys
 from solver import Solver
+from math import Math
 
 
 if __name__ == '__main__':
@@ -7,4 +8,4 @@ if __name__ == '__main__':
         print('Error: Wrong number of arguments')
         exit(1)
     solver = Solver(sys.argv[-1])
-    print(solver)
+    # print(solver)
